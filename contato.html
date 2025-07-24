@@ -8,38 +8,44 @@
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <link rel="icon" type="image/svg" href="./assets/img/favicon.svg" />
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Text+Me+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Text+Me+One&display=swap" rel="stylesheet">
     <title>Contato</title>
 </head>
 <body>
     <header>
-        <nav>
-        <div id="menu"><ul id="menu">
-            <li><a href="index.html">Home</a></li>
+        <nav id="menu">
+        <ul id="menu">
+            <li><a href="index.html">Página Inicial</a></li>
             <li><a href="contato.html">Contato</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
         </ul>
-    </div>
     </nav>
-    <div id="titulo">
-        <h1>Monique Ohana</h1>
+    <div id="titulo-contato">
+        <h1>Contato</h1>
     </div>
 </header>
 <main>
 <section id="contact">
     <form action="#" method="submit" id="formulario">
         <label for="nome">Nome:</label>
-        <input type="text" id="nome" placeholder="Digite seu nome" name="nome" required/>
-        <span id="txtNome"></span>
+        <input type="text" id="nome" onkeyup="validaNome()" placeholder="Digite seu nome" name="nome" />
+        <div id="txtNome"></div>
 
         <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" >
         <span id="txtEmail"></span>
 
         <label for="assunto">Assunto:</label>
-        <input type="text" id="assunto" name="assunto" required placeholder="Digite o assunto da mensagem">
+        <input type="text" id="assunto" name="assunto"  placeholder="Digite o assunto da mensagem">
         <span id="txtAssunto"></span>
 
         <label for="mensagem">Mensagem:</label>
-        <textarea name="mensagem" id="mensagem" placeholder="Digite sua mensagem" required></textarea>
+        <textarea name="mensagem" id="mensagem" placeholder="Digite sua mensagem" ></textarea>
         <button type="submit">Enviar</button>
     </form>
 
@@ -61,16 +67,16 @@
                         <img src="assets/img/linkedin.svg" alt="LinkedIn" />
                     </a>
                     <a href="https://github.com/MoniqueOhana">
-                        <img src="assets/img/github.svg" alt="Github" />
+                        <img src="assets/img/github.svg" alt="GitHub" />
                     </a>
                     <a href="https://www.instagram.com/moniqueohana_/">
                         <img src="assets/img/instagram.svg" alt="Instagram" />
                     </a>
 
             </section>
-    <h3>
-				Feito com 🧡 por Monique Ohana - 2025
+    <h3 id="made">
+				Feito com 🤍 por Monique Ohana - 2025
 			</h3>
-</footer>
+<script src="script.js"></script>
 </body>
 </html>
