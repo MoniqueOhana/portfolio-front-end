@@ -32,7 +32,7 @@ function validaEmail () {
         txt.style.color = 'red'
     }
     else {
-        txt.innerHTML = 'Email inválido'
+        txt.innerHTML = 'Email Válido'
         txt.style.color = 'green'
         emailOk = true;
 
@@ -45,8 +45,10 @@ function validaAssunto() {
     if(assunto.value.length >= 100) {
         txtAssunto.innerHTML = 'Não exceda 100 caractéres nesse campo.'
         txtAssunto.style.color = 'red';
+        assuntoOk = false;
     } else {
-        txtAssunto.style.display = 'none';
+        txtAssunto.innerHTML = 'Assunto válido';
+        txtAssunto.style.color = 'green'
         assuntoOk = true;
     }
 
@@ -58,14 +60,16 @@ function validaMensagem () {
     if(mensagem.value.length <= 25) {
         txtMensagem.innerHTML = 'A mensagem deverá ter no mínimo 25 caractéres.'
         txtMensagem.style.color = 'red'
+        mensagemOk = false;
     } else {
-        txtMensagem.style.display = 'none';
+        txtMensagem.innerHTML = 'Mensagem válida';
+        txtMensagem.style.color = 'green'
         mensagemOk = true;
     }
 }
 
 function enviar () {
-    if (nomeOk == true || emailOk == true || assuntoOk == true || mensagemOk == true) {
+    if (nomeOk == true && emailOk == true && assuntoOk == true && mensagemOk == true) {
         alert('Formulário enviado com sucesso!')
 } else {
     alert('Preencha o formulário corretamente.')

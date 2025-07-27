@@ -46,15 +46,16 @@
 
         <label for="mensagem">Mensagem:</label>
         <textarea name="mensagem" id="mensagem" onkeyup="validaMensagem()" placeholder="Digite sua mensagem" ></textarea>
+        <span id="txtMensagem"></span>
         <button type="submit" onclick="enviar()">Enviar</button>
     </form>
 
-    <article id="mapa">
+    <article id="container-mapa">
 
         <div id="endereco"><p> Praça Padre Léo Morim - Patriarca</p>
         <p>São Paulo - SP</p></div>
 
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29262.57784819086!2d-46.539299677031195!3d-23.53889540108154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce60b365f2bdc1%3A0x7d83749648b36af2!2sPra%C3%A7a%20Padre%20Leo%20Morin%20-%20Cidade%20Patriarca%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003556-050!5e0!3m2!1spt-BR!2sbr!4v1753070380798!5m2!1spt-BR!2sbr" id='mapa' width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" onmousemove="mapazoom()" onmouseout="mapaNormal()"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29262.57784819086!2d-46.539299677031195!3d-23.53889540108154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce60b365f2bdc1%3A0x7d83749648b36af2!2sPra%C3%A7a%20Padre%20Leo%20Morin%20-%20Cidade%20Patriarca%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003556-050!5e0!3m2!1spt-BR!2sbr!4v1753070380798!5m2!1spt-BR!2sbr" id='mapa' width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" onmousemove="mapaZoom()" onmouseout="mapaNormal()"></iframe>
 
     </article>
 
